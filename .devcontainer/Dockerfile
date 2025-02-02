@@ -7,6 +7,8 @@ ENV PYTHONUNBUFFERED=1
 # pip install the relevant modules
 RUN pip install langchain==0.0.208 deeplake==3.9.27 openai==0.27.8 tiktoken
 
+RUN pip install huggingface_hub==0.26
+
 # pip install the standard modules
 RUN pip install --no-cache-dir \
     numpy \
@@ -18,7 +20,8 @@ RUN pip install --no-cache-dir \
     pillow \
     tensorflow \
     keras \
-    google-api-python-client
+    google-api-python-client \
+    pypdf
 
 # pip install the linting modules
 RUN pip install --no-cache-dir \
