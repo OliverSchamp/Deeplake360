@@ -17,7 +17,8 @@ RUN pip install --no-cache-dir \
     tqdm \
     pillow \
     tensorflow \
-    keras
+    keras \
+    google-api-python-client
 
 # pip install the linting modules
 RUN pip install --no-cache-dir \
@@ -26,6 +27,8 @@ RUN pip install --no-cache-dir \
     black
 
 RUN pip install -U pillow==9.5.0
+
+RUN pip install --upgrade --quiet  langchain-google-community
 
 # Clean up package cache to reduce image size
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
