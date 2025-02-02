@@ -21,7 +21,9 @@ RUN pip install --no-cache-dir \
     tensorflow \
     keras \
     google-api-python-client \
-    pypdf
+    pypdf \
+    requests \
+    newspaper3k
 
 # pip install the linting modules
 RUN pip install --no-cache-dir \
