@@ -27,6 +27,7 @@ RUN pip install --no-cache-dir \
     lxml_html_clean \
     langchain-openai \
     langchain-community \
+    langchain-text-splitters \
     pyvis
 
 # pip install the linting modules
