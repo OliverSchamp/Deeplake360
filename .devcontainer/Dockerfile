@@ -23,7 +23,8 @@ RUN pip install --no-cache-dir \
     google-api-python-client \
     pypdf \
     requests \
-    newspaper3k
+    newspaper3k \
+    lxml_html_clean
 
 # pip install the linting modules
 RUN pip install --no-cache-dir \
