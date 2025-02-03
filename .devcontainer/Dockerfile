@@ -26,7 +26,8 @@ RUN pip install --no-cache-dir \
     newspaper3k \
     lxml_html_clean \
     langchain-openai \
-    langchain-community
+    langchain-community \
+    pyvis
 
 # pip install the linting modules
 RUN pip install --no-cache-dir \
