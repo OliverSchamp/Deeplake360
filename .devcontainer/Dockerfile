@@ -24,7 +24,9 @@ RUN pip install --no-cache-dir \
     pypdf \
     requests \
     newspaper3k \
-    lxml_html_clean
+    lxml_html_clean \
+    langchain-openai \
+    langchain-community
 
 # pip install the linting modules
 RUN pip install --no-cache-dir \
