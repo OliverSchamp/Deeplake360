@@ -6,7 +6,7 @@ ENV PYTHONUNBUFFERED=1
 
 RUN apt-get update -y && apt upgrade -y
 
-RUN apt-get install -y libnss3
+RUN apt-get install -y libnss3 ffmpeg
 
 # pip install the relevant modules
 RUN pip install langchain==0.0.208 deeplake==3.9.27 openai==0.27.8 tiktoken
@@ -36,7 +36,10 @@ RUN pip install --no-cache-dir \
     unstructured==0.16.17 \
     selenium==4.28.1 \
     nltk \
-    sentence_transformers===2.2.2
+    sentence_transformers===2.2.2 \
+    yt_dlp
+
+RUN pip install git+https://github.com/openai/whisper.git
 
 # pip install the linting modules
 RUN pip install --no-cache-dir \
