@@ -37,7 +37,8 @@ RUN pip install --no-cache-dir \
     selenium==4.28.1 \
     nltk \
     sentence_transformers===2.2.2 \
-    yt_dlp
+    yt_dlp \
+    google-search-results
 
 RUN pip install git+https://github.com/openai/whisper.git
 
